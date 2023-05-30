@@ -95,6 +95,9 @@ class LinkedBST(AbstractCollection):
         return recurse(self._root)
     
     def my_finder(self, item):
+        """
+        Function find using while
+        """
         node = self._root
 
         while True:
@@ -141,6 +144,9 @@ class LinkedBST(AbstractCollection):
         self._size += 1
 
     def my_adder(self, item):
+        """
+        Function add using while
+        """
         if self.isEmpty():
             self._root = BSTNode(item)
         else:
@@ -339,6 +345,9 @@ class LinkedBST(AbstractCollection):
         return node_adder(node_lst)
     
     def rebalance_while(self):
+        """
+        Function rebalance using while
+        """
         if self.isEmpty():
             return None
         node_lst = [sorted(self.containings)]
